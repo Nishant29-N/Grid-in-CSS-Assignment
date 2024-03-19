@@ -1,0 +1,63 @@
+<!-- 2. The landing page designed in question 01 showcases an impressive layout and design. However, it lacks a crucial component - a navigation bar. Without a navigation bar, users may find navigating through different sections of the website challenging. To address this issue, design a navigation bar using CSS Grid, as shown in the image below as of now there is no need to update the navigation links. Navigation Bars enhance user experience, improve usability, and ensure easy access to various pages and content. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+</head>
+
+<style>
+     body{
+        background-color: #383636;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .main-container{
+        margin: auto;
+        display: grid;
+        gap: 20px;
+        padding: 30px;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .left-section{
+        padding: 10px 50px;
+    }
+
+    .food-image{
+        background-color: #f2f1ff;
+    }
+    h1{
+        color: #f7f3f3;
+        font-size: 50px;
+    }
+
+    p{
+        color: #f7f3f3;
+        padding-bottom: 40px;
+    }
+    button{
+        padding: 10px 20px;
+        font-weight: bolder;
+        background-color: #fff;
+        border: none;
+    }
+</style>
+<body>
+    <div class="main-container">
+        <section class="left-section">
+            <h1>Healthy Food</h1>
+    
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut fugit rem odio animi perferendis porro laudantium sint tempora minima necessitatibus ducimus magnam alias earum, eaque omnis nihil odit voluptate voluptates quaerat similique beatae, voluptatum iste. Eius, iste. Quae debitis asperiores, ipsam error quia repellat iure eligendi nulla nemo minima ad?</p>
+    
+            <button>Read More</button>
+        </section>
+        <section class="food-image">
+            <img src="./images/food-image.png" alt="Illustration_image">
+        </section>
+    </div>
+</body>
+</html>

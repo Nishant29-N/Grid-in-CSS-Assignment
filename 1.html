@@ -1,0 +1,62 @@
+<!-- 1. Imagine you are working with a team for a restaurant client. You have been responsible for designing a landing page hero section for a restaurant specializing in serving healthy food. Your objective is to recreate the layout displayed in the given image using a CSS grid. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+</head>
+<style>
+    body{
+        background-color: #383636;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .main-container{
+        border: 2px solid #f7f3f3;
+        margin: auto;
+        display: grid;
+        gap: 20px;
+        padding: 30px;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .left-section{
+        padding: 10px 50px;
+    }
+
+    .food-image{
+        background-color: #f2f1ff;
+    }
+    h1{
+        color: #f7f3f3;
+        font-size: 50px;
+    }
+
+    p{
+        color: #f7f3f3;
+        padding-bottom: 40px;
+    }
+    button{
+        padding: 10px 20px;
+        font-weight: bolder;
+        background-color: #fff;
+        border: none;
+    }
+</style>
+<body>
+    <div class="main-container">
+        <section class="left-section">
+            <h1>Healthy Food</h1>
+    
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut fugit rem odio animi perferendis porro laudantium sint tempora minima necessitatibus ducimus magnam alias earum, eaque omnis nihil odit voluptate voluptates quaerat similique beatae, voluptatum iste. Eius, iste. Quae debitis asperiores, ipsam error quia repellat iure eligendi nulla nemo minima ad?</p>
+    
+            <button>Read More</button>
+        </section>
+        <section class="food-image">
+            <img src="./images/food-image.png" alt="Illustration_image">
+        </section>
+    </div>
+</body>
+</html>
