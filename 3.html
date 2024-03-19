@@ -1,0 +1,188 @@
+<!-- 3. When learning through project-based learning, it is crucial to incorporate existing features that are interesting and relevant to our website project. To achieve this, let's integrate a section of Swiggy.com into our project. Let's aim to integrate a section of Swiggy.com into our project, leveraging its engaging design and functionality. The output expected is shown in the below image. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Swiggy</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+     body{
+        background-color: #383636;
+        font-family: Montserrat;
+    }
+
+    .main-container{
+        margin: auto;
+        display: grid;
+        gap: 20px;
+        padding: 30px;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .left-section{
+        padding: 10px 50px;
+    }
+
+    h1{
+        color: #f7f3f3;
+        font-size: 50px;
+    }
+
+    p{
+        color: #f7f3f3;
+        padding-bottom: 40px;
+    }
+
+    .read-more-btn{
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: none;
+        background-color: #7fffd4;
+        font-size: 14px;
+        font-weight: bolder;
+    }
+
+
+    nav{
+        position: sticky;
+        display: grid;
+        width: 100%;
+        border-radius: 10px;
+        height: 70px;
+        margin: auto;
+        align-items: center;
+        background-color: #f2f1ff;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    nav img{
+        width: 70px;
+        margin: 10px;
+    }
+    
+    nav a{
+        text-decoration: none;
+        color: #010101;
+        font-size: 16px;
+        padding-right: 50px;
+    }
+    nav a:hover{
+        color: #7fffd4;
+        transition: 0.3s;
+        font-weight: bolder;
+    }
+
+    nav button{
+        border: 1px solid #010101;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 10px;
+        padding: 10px 0px;
+        background-color: #7fffd4;
+        color: #010101;
+        margin-left: 50%;
+        margin-right: 20px;
+    }
+
+    nav button:hover{
+        background-color: #fff;
+        color: #161717;
+    }
+
+    footer{
+        height: 500px;
+        bottom: 0;
+        background-color: #fff;
+        
+    }
+    footer p{
+        color: #161717;
+        font-weight: bold;
+    }
+
+    .footer-main{
+        border-radius: 10px;
+        display: grid;
+        align-items: center;
+        margin: auto;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .detail-container{
+        align-items: center;
+        justify-content: center;
+        margin: 10px 40px;
+        width: 300px;
+        height: 500px;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .detail-container img{
+        align-items: center;
+        width: 250px;
+        margin: 10px 20px;
+    }
+
+    .detail-container h2{
+        align-items: center;
+    }
+    .fast_delivery{
+        margin-top: 150px;
+    }
+</style>
+<body>
+    <nav>
+        <img src="./images/food-image.png" alt="png-logo">
+        <div>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <button>Login</button>
+    </nav>
+    <div class="main-container">
+        <section class="left-section">
+            <h1>Healthy Food</h1>
+    
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut fugit rem odio animi perferendis porro laudantium sint tempora minima necessitatibus ducimus magnam alias earum, eaque omnis nihil odit voluptate voluptates quaerat similique beatae, voluptatum iste. Eius, iste. Quae debitis asperiores, ipsam error quia repellat iure eligendi nulla nemo minima ad?</p>
+    
+            <button class="read-more-btn">Read More</button>
+        </section>
+        <section class="food-image">
+            <img src="./images/food-image.png" alt="Illustration_image">
+        </section>
+    </div>
+
+    <footer class="footer-main">
+        <div class="detail-container">
+            <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/minimum-order-5350972-4466041.png" alt="no-min-order">
+                <h2>
+                    No Minimum Order
+                </h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, maxime.</p>
+            </img>
+        </div>
+        <div class="detail-container">
+            <img src="https://cdn-icons-png.flaticon.com/512/7928/7928706.png" alt="live-track">
+                <h2>
+                    Live Tracking
+                </h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, maxime.</p>
+            </img>
+        </div>
+        <div class="detail-container fast_delivery">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8F0vq6DclhnU44JvRQleCp-x8wT_yN4VnV5D9p0saYQ&s" alt="fast-delivery">
+                <h2>
+                    Lightning Fast Delivery
+                </h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, maxime.</p>
+            </img>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

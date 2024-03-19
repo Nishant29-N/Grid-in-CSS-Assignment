@@ -10,9 +10,10 @@
 </head>
 
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
      body{
         background-color: #383636;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: Montserrat;
     }
 
     .main-container{
@@ -27,9 +28,6 @@
         padding: 10px 50px;
     }
 
-    .food-image{
-        background-color: #f2f1ff;
-    }
     h1{
         color: #f7f3f3;
         font-size: 50px;
@@ -39,21 +37,80 @@
         color: #f7f3f3;
         padding-bottom: 40px;
     }
-    button{
+
+    .read-more-btn{
         padding: 10px 20px;
-        font-weight: bolder;
-        background-color: #fff;
+        border-radius: 10px;
         border: none;
+        background-color: #7fffd4;
+        font-size: 14px;
+        font-weight: bolder;
+    }
+
+
+    nav{
+        position: sticky;
+        display: grid;
+        width: 100%;
+        border-radius: 10px;
+        height: 70px;
+        margin: auto;
+        align-items: center;
+        background-color: #f2f1ff;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    nav img{
+        width: 70px;
+        margin: 10px;
+    }
+    
+    nav a{
+        text-decoration: none;
+        color: #010101;
+        font-size: 16px;
+        padding-right: 50px;
+    }
+    nav a:hover{
+        color: #7fffd4;
+        transition: 0.3s;
+        font-weight: bolder;
+    }
+
+    nav button{
+        border: 1px solid #010101;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 10px;
+        padding: 10px 0px;
+        background-color: #7fffd4;
+        color: #010101;
+        margin-left: 50%;
+        margin-right: 20px;
+    }
+
+    nav button:hover{
+        background-color: #fff;
+        color: #161717;
     }
 </style>
 <body>
+    <nav>
+        <img src="./images/food-image.png" alt="png-logo">
+        <div>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <button>Login</button>
+    </nav>
     <div class="main-container">
         <section class="left-section">
             <h1>Healthy Food</h1>
     
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut fugit rem odio animi perferendis porro laudantium sint tempora minima necessitatibus ducimus magnam alias earum, eaque omnis nihil odit voluptate voluptates quaerat similique beatae, voluptatum iste. Eius, iste. Quae debitis asperiores, ipsam error quia repellat iure eligendi nulla nemo minima ad?</p>
     
-            <button>Read More</button>
+            <button class="read-more-btn">Read More</button>
         </section>
         <section class="food-image">
             <img src="./images/food-image.png" alt="Illustration_image">
