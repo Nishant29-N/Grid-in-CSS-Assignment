@@ -8,7 +8,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time Table</title>
 </head>
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+    body{
+        font-family: Montserrat, 'sans-serif';
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .main-container{
+        border: 3px solid #313030;
+    }
+
+    .time-table-container{
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        border: 2px solid #313030;
+        margin: 10px;
+        background-color: #557cff;
+    }
+
+    .row-1{
+        padding: 30px;
+        font-size: 14px;
+        font-weight: bold;
+        border: 2px dashed #313030;
+        background-color: #ffd8d8;
+    }
+
+    div{
+        padding: 20px 5px;
+        border: 2px dotted black;
+        text-align: center;
+    }
+
+    .days{
+        background-color: #aeecff;
+    }
+
+    .labs-end-day{
+        grid-column-end: 7;
+        background-color: #70b974;
+    }
+</style>
 <body>
-    
+    <section class="main-container">
+        <h1>School Time Table</h1>
+        <div class="time-table-container">
+            <div class="row-1">Time</div>
+            <div class="row-1">8:00 AM - 9:00 AM</div>
+            <div class="row-1">9:00 AM - 10:00 AM</div>
+            <div class="row-1">10:00 AM - 11:00 AM</div>
+            <div class="row-1">11:00 AM - 12:00 PM</div>
+            <div class="row-1">12:00 PM - 02:00 PM</div>
+            <div class="row-1">02:00 PM - 03:00 PM</div>
+            <div class="row-1">03:00 PM - 04:00 PM</div>
+
+            <div class="days">MONDAY</div>
+            <div>Chemistry</div>
+            <div>English</div>
+            <div>Physics</div>
+            <div>Maths</div>
+            <div class="lunch">L</div>
+
+            <div class="labs-end-day">Chemistry Lab</div>
+            
+            <div class="days">TUESDAY</div>
+            <div class="labs-start-day">Physics Lab</div>
+            <div>Chemistry</div>
+            <div>English</div>
+            <div class="lunch">U</div>
+            <div>Physics</div>
+            <div>Maths</div>
+            
+            <div class="days">WEDNESDAY</div>
+            <div>Chemistry</div>
+            <div>English</div>
+            <div>Physics</div>
+            <div>Maths</div>
+            <div class="lunch">N</div>
+
+            <div class="labs bg-green">Games</div>
+
+            <div class="days">THURSDAY</div>
+            <div class="labs-end-day">Chemistry Lab</div>
+            <div>Chemistry</div>
+            <div>English</div>
+            <div class="lunch">C</div>
+            <div>Physics</div>
+            <div>Maths</div>
+
+
+            <div class="days">FRIDAY</div>
+            <div>Chemistry</div>
+            <div>English</div>
+            <div>Physics</div>
+            <div>Maths</div>
+            <div class="lunch">H</div>
+
+            <div class="labs-start-day">Chemistry Lab</div>
+
+
+            <div class="days">SATURDAY</div>
+            <div class="labs-start-day">Physics Lab</div>
+            <div>Chemistry</div>
+            <div>English</div>
+            <div class="lunch">Break</div>
+            <div class="labs-end-day bg-green">LET OFF</div>
+        </div> 
+    </section>
 </body>
 </html>
