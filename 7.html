@@ -1,0 +1,102 @@
+<!-- 7. Design a visually stunning photo gallery using CSS Grid for a photographer's portfolio website. The goal is to create a dynamic layout that showcases the photographer's images in an organized and visually appealing manner. By leveraging the power of CSS Grid, ensure that the gallery provides a seamless and immersive user experience, allowing visitors to easily navigate through the photos and appreciate the photographer's work. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo gallery</title>
+</head>
+
+<style>
+    body{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: #1a1a1a;
+    }
+    h1{
+        text-align: center;
+        color: #fdfdfd;
+    }
+
+    .main-container{
+        border: 2px solid #dfdfdf;
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 250px);
+        gap: 20px;
+        padding: 20px;
+    }
+
+    div{
+        display: block;
+    }
+
+    img{
+        border-radius: 10px;
+        margin: 15px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .photo-1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-end: 2;
+    }
+    .photo-2{
+        grid-column-start: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        
+    }
+
+    .photo-3{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+    }
+    .photo-4{
+        grid-column-start: 1;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    .photo-5{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+    }
+    .photo-6{
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        
+    }
+</style>
+
+<body>
+    <h1>Photo Gallery</h1>
+    <div class="main-container">
+
+        <div class="photo-1">
+            <img src="https://external-preview.redd.it/mountain-view-3840x2160-v0-fO2EKkqrlIFEPK79_TmiCmvFqtwsP38ZaB6wHL5EX6g.png?width=640&crop=smart&auto=webp&s=325c9e101b50b4ae3b2c9b3ea5bf8b95939034e6" alt="image-01">
+        </div>
+        <div class="photo-2">
+            <img src="https://images.pexels.com/photos/799443/pexels-photo-799443.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="image-02">
+        </div>
+        <div class="photo-3">
+            <img src="https://i.pinimg.com/originals/f3/ed/ee/f3edeef287ab6c4ea59b9c971a410f47.jpg" alt="image-03">
+        </div>
+        <div class="photo-4">
+            <img src="https://img.freepik.com/free-photo/majestic-mountain-peak-tranquil-winter-landscape-generated-by-ai_188544-15662.jpg" alt="image-04">
+        </div>
+        <div class="photo-5">
+            <img src="https://w0.peakpx.com/wallpaper/730/501/HD-wallpaper-iphone-14-pro-thumbnail.jpg" alt="image-05">
+        </div>
+        <div class="photo-6">
+            <img src="https://images.unsplash.com/photo-1542451313056-b7c8e626645f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D" alt="image-06">
+        </div>
+
+    </div>
+</body>
+</html>

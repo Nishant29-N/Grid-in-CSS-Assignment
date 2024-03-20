@@ -13,27 +13,30 @@
 
     body{
         font-family: Montserrat, 'sans-serif';
+        background-color: #3b3b3b;
     }
 
     h1{
         text-align: center;
+        color: #aeecff;
     }
 
     .main-container{
-        border: 3px solid #313030;
+        border: 3px solid #e3e3e3;
     }
 
     .time-table-container{
         display: grid;
+        font-weight: bold;
         grid-template-columns: repeat(8, 1fr);
-        border: 2px solid #313030;
-        margin: 10px;
+        border: 2px solid #aeecff;
+        margin: 5px;
         background-color: #557cff;
     }
 
     .row-1{
         padding: 30px;
-        font-size: 14px;
+        font-size: 18px;
         font-weight: bold;
         border: 2px dashed #313030;
         background-color: #ffd8d8;
@@ -50,7 +53,25 @@
     }
 
     .labs-end-day{
-        grid-column-end: 7;
+        grid-column-start: 7;
+        grid-column-end: 9;
+        background-color: #b98e70;
+    }
+    
+    .lunch{
+        background-color: #fff820;
+        border: none;
+    }
+    
+    .labs-start-day{
+        background-color: #b98e70;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    .bg-green{
+        grid-column-start: 7;
+        grid-column-end: 9;
         background-color: #70b974;
     }
 </style>
@@ -94,7 +115,7 @@
             <div class="labs bg-green">Games</div>
 
             <div class="days">THURSDAY</div>
-            <div class="labs-end-day">Chemistry Lab</div>
+            <div class="labs-start-day">Chemistry Lab</div>
             <div>Chemistry</div>
             <div>English</div>
             <div class="lunch">C</div>
@@ -109,7 +130,7 @@
             <div>Maths</div>
             <div class="lunch">H</div>
 
-            <div class="labs-start-day">Chemistry Lab</div>
+            <div class="labs-end-day">Chemistry Lab</div>
 
 
             <div class="days">SATURDAY</div>
